@@ -5,7 +5,7 @@ import Cart from "./Product/Cart";
 import ParentProduct from "./Product/ParentProduct";
 import ProductDetails from "./Product/ProductDetails";
 
-const Landing = () => {
+export const Landing = () => {
   return (
     <div>
       <BrowserRouter>
@@ -13,7 +13,7 @@ const Landing = () => {
         <Routes>
           <Route path="/" element={<ParentProduct />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/" element={<ProductDetails />} />
+          <Route path="/product" element={<ProductDetails />} />
         </Routes>
       </BrowserRouter>
     </div>
